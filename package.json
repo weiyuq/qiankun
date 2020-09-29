@@ -1,6 +1,6 @@
 {
   "name": "@igx/qiankun",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An completed implementation of Micro Frontends",
   "keywords": [
     "micro frontend",
@@ -61,7 +61,7 @@
   "homepage": "https://github.com/kuitos/qiankun#readme",
   "dependencies": {
     "@babel/runtime": "^7.10.5",
-    "@igx/import-html-entry": "1.0.1",
+    "@igx/import-html-entry": "^1.0.3",
     "import-html-entry": "^1.9.0",
     "lodash": "^4.17.11",
     "single-spa": "^5.3.1",
