@@ -3,7 +3,7 @@
  * @since 2020-04-01
  */
 
-import { importEntry } from 'import-html-entry';
+import { importEntry } from '@igx/import-html-entry';
 import { concat, mergeWith } from 'lodash';
 import { LifeCycles, ParcelConfigObject } from 'single-spa';
 import getAddOns from './addons';
@@ -233,7 +233,7 @@ export async function loadApp<T extends object>(
   const { singular = false, sandbox = true, excludeAssetFilter, ...importEntryOpts } = configuration;
 
   // get the entry html content and script executor
-  const { template, execScripts, assetPublicPath } = await importEntry(entry, importEntryOpts);
+  const { template, execScripts, assetPublicPath } = await importEntry(entry, appName, importEntryOpts);
 
   // as single-spa load and bootstrap new app parallel with other apps unmounting
   // (see https://github.com/CanopyTax/single-spa/blob/master/src/navigation/reroute.js#L74)

@@ -7,9 +7,9 @@ import { SandBox, SandBoxType } from '../interfaces';
 function iter(obj: object, callbackFn: (prop: any) => void) {
   // eslint-disable-next-line guard-for-in, no-restricted-syntax
   for (const prop in obj) {
-    if (obj.hasOwnProperty(prop)) {
-      callbackFn(prop);
-    }
+    // if (obj.hasOwnProperty(prop)) {
+    callbackFn(prop);
+    // }
   }
 }
 
